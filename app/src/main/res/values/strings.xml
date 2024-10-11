@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">crédito_hipotecario_moviles</string>
+    <string name="tv_simuladores">Simuladores</string>
+    <string name="tv_credito">Crédito hipotecario en colombia</string>
+    <string name="tv_valor">* Valor de la propiedad</string>
+    <string name="h_campo1">100.000.000</string>
+    <string name="tv_cuanto">* ¿Cuánto necesitas?</string>
+    <string name="h_campo2">70.000.000</string>
+    <string name="ht_campo2">El préstamo minimo es de 450.000.000 y no puede exceder el 70% del valor de la propiedad para
+                                créditos hipotecarios, mientras que para leasing
+                                habitacional no puede exceder el 80% del valor de la
+                                propiedad</string>
+    <string name="tv_plazo">* ¿A qué plazo necesitas el credito (años)?</string>
+    <string name="ht_campo3">Van desde los 5 hasta los 20 años. El plazo más común es de 20 años.</string>
+    <string name="tv_tasaInteres">* ¿A qué tasa de interés efectiva anual (TAE)?</string>
+    <string name="ht_campo4">Esta tasa depende de tu historial crediticio y del banco en el que pidas el crédito.</string>
+    <string name="btn_simular">Simular</string>
+    <string name="h_campo4">14.03</string>
+    <string name="tv_resultado">Paga cuotas de %1$s por mes</string>
+</resources>

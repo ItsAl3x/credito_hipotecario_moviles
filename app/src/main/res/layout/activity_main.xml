@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    tools:ignore="ExtraText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="fill_vertical"
+            app:layout_constraintHeight_default="spread">
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/tv_simuladores"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/tv_credito"
+                android:layout_width="275dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/tv_credito"
+                android:textFontWeight="500"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="159dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/tv_valor"
+                android:textColor="@color/red"
+                android:textFontWeight="500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_credito" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_campo1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="346dp"
+                android:layout_height="121dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/h_campo1"
+                android:orientation="vertical"
+                app:helperText="El valor de la propiedad no puede ser inferior a $70.000.000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_campo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/tv_cuanto"
+                android:textColor="@color/red"
+                android:textFontWeight="500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etl_campo1"
+                tools:ignore="TextSizeCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_campo2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="343dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:hint="@string/h_campo2"
+                app:helperText="@string/ht_campo2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_campo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="288dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_plazo"
+                android:textColor="@color/red"
+                android:textFontWeight="500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etl_campo2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_campo3"
+                android:layout_width="345dp"
+                android:layout_height="123dp"
+                android:layout_marginTop="20dp"
+                android:hint="5"
+                app:helperText="@string/ht_campo3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_campo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginBottom="16dp"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="319dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tv_tasaInteres"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etl_campo3" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etl_campo4"
+                android:layout_width="343dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/h_campo4"
+                app:helperText="@string/ht_campo4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_campo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="text" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/bt_simular"
+                android:layout_width="288dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#BF0016"
+                android:text="@string/btn_simular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etl_campo4" />
+
+            <TextView
+                android:id="@+id/tv_resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/tv_resultado"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_simular" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
